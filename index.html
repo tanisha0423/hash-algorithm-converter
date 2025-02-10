@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hash Algorithm Visualizer</h1>
+        
+        <!-- User Input -->
+        <div class="input-section">
+            <input type="text" id="textInput" placeholder="Enter text...">
+            <select id="algorithmSelect">
+                <option value="SHA-256">SHA-256</option>
+                <option value="MD5">MD5</option>
+            </select>
+            <button onclick="generateHash()">Generate Hash</button>
+        </div>
+
+        <!-- Output -->
+        <div class="output-section">
+            <h3>Hashed Value:</h3>
+            <p id="hashOutput"></p>
+        </div>
+
+        <!-- Hashing Steps Visualization -->
+        <div class="visualizer">
+            <h3>Hashing Steps:</h3>
+            <div id="visualizerSteps"></div>
+        </div>
+
+        <!-- React Container -->
+        <div id="root"></div>
+    </div>
+
+    <!-- Load CryptoJS for MD5 Hashing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- React & ReactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- React App -->
+    <script type="module" src="App.js"></script>
+</body>
+</html>

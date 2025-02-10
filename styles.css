@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-section input, select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.output-section {
+    margin-top: 20px;
+    background: #eef;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.visualizer {
+    margin-top: 20px;
+}
+
+.step {
+    display: inline-block;
+    background: #ddd;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
